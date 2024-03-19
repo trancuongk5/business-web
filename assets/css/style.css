@@ -76,13 +76,13 @@ button,a {
 }
 
 #header .logo__img{
-    height: var(--heigh-header-box);
+    height: calc(var(--heigh-header-box) *80%);
 }
 
 #header .logo__name{
     color: var(--colors-secondary); 
     font-weight: 800; 
-    font-size: 34px;
+    font-size: 30px;
 }
 
 #header .header__nav{
@@ -98,11 +98,6 @@ button,a {
     padding: 0 20px;
     color: var(--colors-neutral-d-grey);
     line-height: 45px;
-}
-
-#header .content__title:hover{
-    background-color: var(--colors-color-tint-5);
-    border-radius: 6px;
 }
 
 #header .header__user-log{

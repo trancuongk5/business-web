@@ -68,7 +68,8 @@ a {
     right: 0;
     left: 0;
     z-index: 1;
-    background-color: var(--colors-neutral-silver);
+    /* background-color: var(--colors-neutral-silver); */
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 #header .header__logo {
@@ -145,7 +146,6 @@ a {
 }
 
 #home .home__slider {
-
     padding: 96px 0;
 }
 
@@ -156,7 +156,7 @@ a {
 
 }
 
-#home .home__slider {
+.grey_background {
     background-color: var(--colors-neutral-silver);
 }
 
@@ -190,14 +190,14 @@ a {
     padding: 0 144px;
 }
 
-#home .box-contents {
+#home .seminar__box-contents {
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-#home .box-content__text {
+.box-content__text {
     color: var(--colors-neutral-grey);
     display: flex;
     flex-direction: column;
@@ -205,7 +205,7 @@ a {
     gap: 8px;
 }
 
-#home .box-content__text h1 {
+.box-content__text h1 {
     max-width: 542px;
     text-align: center;
     font-size: 34px;
@@ -215,6 +215,7 @@ a {
 #home .box-content__logo {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     height: 74px;
 }
 
@@ -225,6 +226,7 @@ a {
 #home .box-content__frame {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 16px;
 }
 
@@ -279,4 +281,103 @@ a {
 #body .body__slider .content-btn {
     width: 150px;
     height: 52px;
+}
+
+#body .body__content--back{
+    padding: 32px 0;
+}
+
+#body .body__content{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 144px;
+    gap: 78px;
+}
+
+#body .more__description{
+    color: var(--colors-neutral-grey);
+    margin: 16px 0;
+}
+
+#body .more__description--author{
+    color: var(--colors-primary);
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#body .more__description--slogan{
+    color: var(--colors-neutral-l-grey);
+}
+
+#body .more__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex: 5;
+}
+
+#body .box__icons{
+    display: flex;
+    flex: 6;
+    justify-content: space-around;
+}
+
+#body .box__pointer, #body .box__pointer a{
+    color: var(--colors-primary);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+#body .body__community-update{
+    padding: 0 114px;
+}
+
+#body .box__community-update{
+    display: flex;
+    justify-content: center;
+}
+
+#body .box-content__text--new-width{
+    max-width: 60%;
+    text-align: center;
+    margin: 32px 0;
+}
+
+#body .box-content__frame-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+#body .seminar__frame--community{
+    display: flex;
+    flex-direction: column;
+    max-width: 24vw;
+    border-radius: 8px;
+    position: relative;
+}
+
+#body .box__img-community-info{
+    max-width: 20vw;
+    padding: 16px;
+    background-color: var(--colors-neutral-silver);
+    align-self: center;
+    height: 16vh;
+    border-radius: 8px;
+    position: absolute;
+    color: var(--colors-neutral-grey);
+    bottom: -12vh;
+    box-shadow: 0px 3px 24px var(--colors-neutral-l-grey);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#body .slider__footer{
+    margin-top: 152px;
+    height: 20vh;
 }
